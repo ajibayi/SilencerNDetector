@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="ara.kuet.musta.QiblaDirection"
+                android:background="@drawable/back_qibla">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/qibla"
+                android:padding="5dp"
+                android:id="@+id/tvqibla"
+                android:textSize="20sp"
+                android:layout_gravity="left|top"
+                android:gravity="center"
+                android:background="@drawable/tvqibla"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:password="false"
+                android:textColor="#ff2d49ff"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbindicator"
+                android:layout_gravity="right"
+                android:background="@drawable/bindi110"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/backindicator" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgindicator"
+                android:layout_gravity="right"
+                android:background="@drawable/ind110"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/indicator" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imglower"
+                android:layout_gravity="center"
+                android:background="@drawable/com"
+                android:layout_below="@+id/imgbindicator"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/Lower" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/upper"
+                android:layout_gravity="center"
+                android:background="@drawable/upper"
+                android:layout_below="@+id/imgbindicator"
+                android:layout_alignLeft="@+id/imglower"
+                android:layout_alignStart="@+id/imglower"
+                android:contentDescription="@string/upper"
+                android:scaleType="centerCrop"
+                android:layout_alignRight="@+id/imglower"
+                android:layout_alignEnd="@+id/imglower"
+                android:layout_alignBottom="@+id/imglower" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

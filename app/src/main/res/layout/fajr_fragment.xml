@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="5dp"
+             tools:context="ara.kuet.musta.FajrFragment"
+             android:background="@drawable/unnamed">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/fajr_time"
+                android:id="@+id/textView5_fajr"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="30sp"
+                android:typeface="serif"
+                android:textColor="#fffdffff"
+                android:background="@drawable/mytextview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/clock"
+                android:textSize="40sp"
+                android:id="@+id/tv_fajr_clock"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="#ffffffff"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/mytextview"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/but_fajr_update"
+                android:background="@drawable/mybutton"
+                android:layout_marginTop="33dp"/>
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_fajr_pmode"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/myspinner"
+                android:layout_marginTop="56dp"
+                android:popupBackground="@drawable/popup" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/tv_engage"
+                    android:textColor="#fffff123"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="50"
+                    android:id="@+id/tv_fajr_engage"
+                    android:layout_marginTop="40dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/tv_release"
+                    android:textColor="#ff5affea"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom|right"
+                    android:id="@+id/tv_fajr_release"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_fajr_eggage"
+                    android:layout_weight="50"
+                    android:background="@drawable/myspinner"
+                    android:layout_marginTop="40dp"
+                    android:spinnerMode="dropdown"
+                    android:popupBackground="@drawable/popup" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_fajr_release"
+                    android:layout_gravity="bottom|left"
+                    android:layout_weight="50"
+                    android:background="@drawable/myspinner"
+                    android:spinnerMode="dropdown"
+                    android:popupBackground="@drawable/popup" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

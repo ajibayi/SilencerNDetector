@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="ara.kuet.musta.SunriseFragment"
+    android:padding="00sp"
+    android:background="@drawable/back_maszid3">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0sp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:layout_marginBottom="0dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="70sp"
+            android:id="@+id/linearLayout_clock">
+            <DigitalClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/digitalClock"
+                android:typeface="serif"
+                android:textSize="30sp"
+                android:textColor="#ff0d135d"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout_fajr"
+                android:layout_below="@+id/linearLayout_clock"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="05:58 AM"
+                    android:id="@+id/ftime"
+                    android:typeface="serif"
+                    android:background="@drawable/mytv_sunrise"
+                    android:textColor="#fffffefe"
+                    android:padding="05sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout_zuhr"
+                android:layout_below="@+id/linearLayout_fajr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="01:30 PM"
+                    android:id="@+id/ztime"
+                    android:typeface="serif"
+                    android:padding="5sp"
+                    android:textColor="#fff8f88a"
+                    android:background="@drawable/mytv_sunrise"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout_asr"
+                android:layout_below="@+id/linearLayout_zuhr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="05:30 PM"
+                    android:id="@+id/atime"
+                    android:typeface="serif"
+                    android:background="@drawable/mytv_sunrise"
+                    android:padding="05sp"
+                    android:textColor="#fffffe9e"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout_maghrib"
+                android:layout_below="@+id/linearLayout_asr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="06:30 PM"
+                    android:id="@+id/mtime"
+                    android:typeface="serif"
+                    android:padding="5sp"
+                    android:textColor="#ff0d135d"
+                    android:background="@drawable/mytv_sunrise"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout_isha"
+                android:layout_below="@+id/linearLayout_maghrib"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="08:30 PM"
+                    android:id="@+id/itime"
+                    android:typeface="serif"
+                    android:background="@drawable/mytv_sunrise"
+                    android:padding="5sp"
+                    android:textColor="#ff0d135d"
+                    android:textStyle="italic"
+                    android:theme="@android:style/Holo.ButtonBar" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
