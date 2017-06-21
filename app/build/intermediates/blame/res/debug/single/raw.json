@@ -1,18 +1,10 @@
 [
     {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\build\\intermediates\\res\\merged\\debug\\raw\\madina_fajr.ogg",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\src\\main\\res\\raw\\madina_fajr.ogg"
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/raw/apple.mp3",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/raw/apple.mp3"
     },
     {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\build\\intermediates\\res\\merged\\debug\\raw\\apple.mp3",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\src\\main\\res\\raw\\apple.mp3"
-    },
-    {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\build\\intermediates\\res\\merged\\debug\\raw\\apple.mp3",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\src\\main\\res\\raw\\apple.mp3"
-    },
-    {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\build\\intermediates\\res\\merged\\debug\\raw\\madina_fajr.ogg",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\src\\main\\res\\raw\\madina_fajr.ogg"
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/raw/madina_fajr.ogg",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/raw/madina_fajr.ogg"
     }
 ]

@@ -14,59 +14,59 @@ import com.kuet.musta.R;
 
 public class ItemOne extends Fragment {
 
-	public static final String TAG = ItemOne.class.getSimpleName();
-	
-	private ItemOnePagerAdapter mPagerAdapter;
-	private ViewPager mViewPager;
-	
-	public static ItemOne newInstance() {
-		return new ItemOne();
-	}
-	
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setRetainInstance(true);
-	}
+    public static final String TAG = ItemOne.class.getSimpleName();
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.activity_item_one, container, false);
-	}
-	
-	@Override
-	public void onViewCreated(View view, Bundle savedInstanceState) {
-		super.onViewCreated(view, savedInstanceState);
-		
-		PagerTitleStrip tabs = (PagerTitleStrip) view.findViewById(R.id.pager_title_strip);
-		ViewPager pager = (ViewPager) view.findViewById(R.id.pager);
-		pager.setAdapter(mPagerAdapter);
+    private ItemOnePagerAdapter mPagerAdapter;
+    private ViewPager mViewPager;
 
-	}
-	
-	public class ItemOnePagerAdapter extends FragmentPagerAdapter {
+    public static ItemOne newInstance() {
+        return new ItemOne();
+    }
 
-		private final String[] TAB_TITLES = { "Today", "This Week", "This Month" };
-		
-		public ItemOnePagerAdapter(FragmentManager fm) {
-			super(fm);
-		}
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
+    }
 
-		@Override
-		public CharSequence getPageTitle(int position) {
-			return TAB_TITLES[position];
-		}
-		
-		@Override
-		public Fragment getItem(int position) {
-			return ItemOneContentFragment.newInstance(position);
-		}
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_item_one, container, false);
+    }
 
-		@Override
-		public int getCount() {
-			return 3;
-			
-		}
-		
-	}
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        PagerTitleStrip tabs = (PagerTitleStrip) view.findViewById(R.id.pager_title_strip);
+        ViewPager pager = (ViewPager) view.findViewById(R.id.pager);
+        pager.setAdapter(mPagerAdapter);
+
+    }
+
+    public class ItemOnePagerAdapter extends FragmentPagerAdapter {
+
+        private final String[] TAB_TITLES = {"Today", "This Week", "This Month"};
+
+        public ItemOnePagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return TAB_TITLES[position];
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return ItemOneContentFragment.newInstance(position);
+        }
+
+        @Override
+        public int getCount() {
+            return 3;
+
+        }
+
+    }
 }

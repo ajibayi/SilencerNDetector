@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_mute2.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher_mute2.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/drawer_gclock.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/drawer_gclock.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_mute_red.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher_mute_red.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/nav_about.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/nav_about.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_com.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher_com.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/drawer_clock.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/drawer_clock.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/drawer_next_updown.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/drawer_next_updown.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_comp.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher_comp.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/nav_silencer.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/nav_silencer.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/nav_compass.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/nav_compass.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/drawer_about.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/drawer_about.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_mute1.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher_mute1.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/drawer_about_boy.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/drawer_about_boy.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/nav_next.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/nav_next.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_mute.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/ic_launcher_mute.png"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/drawable-mdpi/com.png",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/drawable-mdpi/com.png"
+    }
+]

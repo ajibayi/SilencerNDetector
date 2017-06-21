@@ -1,26 +1,14 @@
 [
     {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_test.xml",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\src\\main\\res\\menu\\menu_test.xml"
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/menu/menu_test.xml",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/menu/menu_test.xml"
     },
     {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tabbed.xml",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\src\\main\\res\\menu\\tabbed.xml"
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\src\\main\\res\\menu\\main.xml"
-    },
-    {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_test.xml",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\src\\main\\res\\menu\\menu_test.xml"
-    },
-    {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDetector\\app\\src\\main\\res\\menu\\main.xml"
-    },
-    {
-        "merged": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tabbed.xml",
-        "source": "F:\\ANDROID\\AndroidStudio\\SilencerNDitectorLAST\\SilencerNDitector\\app\\src\\main\\res\\menu\\tabbed.xml"
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/menu/tabbed.xml",
+        "source": "/home/musta/Downloads/SilencerNDetector-master/app/src/main/res/menu/tabbed.xml"
     }
 ]

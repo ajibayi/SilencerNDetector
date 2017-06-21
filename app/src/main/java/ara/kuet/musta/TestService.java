@@ -24,7 +24,7 @@ public class TestService extends Service {
     private Timer timer = new Timer();
     private Time time = new Time();
 
-    private SharedPreferences spMaster,spLat,spLon;
+    private SharedPreferences spMaster, spLat, spLon;
     private SharedPreferences.Editor editor;
 
     boolean isGPSEnabled = false;
@@ -82,7 +82,7 @@ public class TestService extends Service {
         criteria.setCostAllowed(true);
         isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-        String bestProvider = locationManager.getBestProvider(criteria,false);
+        String bestProvider = locationManager.getBestProvider(criteria, false);
         locationManager.requestLocationUpdates("gps", 2000, 2, locationListener);
     }
 
@@ -102,7 +102,7 @@ public class TestService extends Service {
             editor.apply();
             angleCalculation();
             checkSavingLocation();
-           }
+        }
 
         @Override
         public void onStatusChanged(String provider, int status, Bundle extras) {
@@ -117,74 +117,63 @@ public class TestService extends Service {
             try {
                 //Toast.makeText(getApplicationContext(),"Enable "+ provider.toUpperCase()+" For Correctness !",Toast.LENGTH_SHORT).show();
 
-            } catch (Exception ignored)
-            {
+            } catch (Exception ignored) {
 
             }
         }
     };
 
     private void checkSavingLocation() {
-        float aa = spMaster.getFloat("latitude",(float) 22.48);//+North,-South
-        float bb = spMaster.getFloat("longitude",(float) 89.45);//+East,-West
+        float aa = spMaster.getFloat("latitude", (float) 22.48);//+North,-South
+        float bb = spMaster.getFloat("longitude", (float) 89.45);//+East,-West
         Map<String, ?> allSplat = spLat.getAll();
         Map<String, ?> allSplon = spLon.getAll();
         for (Map.Entry<String, ?> entry1 : allSplat.entrySet()) {
             float xx = (Float) entry1.getValue();
-            if ((aa>=(xx-0.0002) && (aa<=(xx+0.0002))))
-            {
+            if ((aa >= (xx - 0.0002) && (aa <= (xx + 0.0002)))) {
                 latOk = true;
                 break;
             }
         }
-        for(Map.Entry<String,?> entry2 : allSplon.entrySet())
-        {
+        for (Map.Entry<String, ?> entry2 : allSplon.entrySet()) {
             float yy = (Float) entry2.getValue();
-            if ((bb>=(yy-0.000132)) && (bb<=(yy+0.000132)))
-            {
+            if ((bb >= (yy - 0.000132)) && (bb <= (yy + 0.000132))) {
                 lonOk = true;
                 break;
             }
         }
-        if(latOk && lonOk)
-        {
+        if (latOk && lonOk) {
             audioManager.setRingerMode(0);
             latOk = false;
             lonOk = false;
-        }
-        else
-        {
+        } else {
             audioManager.setRingerMode(2);
             latOk = false;
             lonOk = false;
         }
     }
 
-    public void  angleCalculation() {
+    public void angleCalculation() {
 
         String ak;
-        double upper = Math.sin(Math.PI/180*(lon -39.8233));
-        double lower = Math.cos(Math.PI/180*lat)*Math.tan(Math.PI/180*21.42330)-Math.sin(Math.PI/180*lat)* Math.cos(Math.PI/180*(lon-39.8230));
-        double cal0 = (upper/lower);
+        double upper = Math.sin(Math.PI / 180 * (lon - 39.8233));
+        double lower = Math.cos(Math.PI / 180 * lat) * Math.tan(Math.PI / 180 * 21.42330) - Math.sin(Math.PI / 180 * lat) * Math.cos(Math.PI / 180 * (lon - 39.8230));
+        double cal0 = (upper / lower);
         double cal1 = Math.atan(cal0);
-        cal1 = (cal1*180/Math.PI);
+        cal1 = (cal1 * 180 / Math.PI);
         float myDegree = (float) cal1;
         int angle = (int) Math.ceil(myDegree);
-        if(angle>0&&angle<=180)
-        {
-            ak = String.valueOf(angle)+"' West From North";
-        }
-        else
-        {
-            angle = - angle;
-            ak = String.valueOf(angle)+"' East From North";
+        if (angle > 0 && angle <= 180) {
+            ak = String.valueOf(angle) + "' West From North";
+        } else {
+            angle = -angle;
+            ak = String.valueOf(angle) + "' East From North";
         }
         editor.putString("angle", ak);
         editor.apply();
         try {
             QiblaDirection.angleKeeper.setText(ak);
-        } catch (Exception ignored)
-        {
+        } catch (Exception ignored) {
         }
     }
 }

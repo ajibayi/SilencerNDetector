@@ -7,9 +7,10 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.widget.TimePicker;
 
-public class TimePickerDialogFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener{
+public class TimePickerDialogFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
 
     private Fragment mCurrentFragment;
+
     public TimePickerDialogFragment(Fragment fragment) {
         mCurrentFragment = fragment;
     }
@@ -19,7 +20,7 @@ public class TimePickerDialogFragment extends DialogFragment implements TimePick
         int hour = bundle.getInt("hour");
         int minute = bundle.getInt("minute");
         return new TimePickerDialog(getActivity(),
-                (TimePickerDialog.OnTimeSetListener)mCurrentFragment,hour,
+                (TimePickerDialog.OnTimeSetListener) mCurrentFragment, hour,
                 minute, false);
 
     }

@@ -16,22 +16,24 @@ public class SunriseFragment extends Fragment {
 
     static TextView uptime;
     static TextView upnamaz;
-    static TextView f,z,a,m,i;
+    static TextView f, z, a, m, i;
     SharedPreferences sp;
+
     public SunriseFragment() {
         // Required empty public constructor
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.sunrise_fragment,container,false);
+        return inflater.inflate(R.layout.sunrise_fragment, container, false);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceStateSun) {
         super.onViewCreated(view, savedInstanceStateSun);
         //Toast.makeText(getActivity(),"onCreate",Toast.LENGTH_LONG).show();
-        sp = getActivity().getSharedPreferences("mysp",0);
+        sp = getActivity().getSharedPreferences("mysp", 0);
         f = (TextView) view.findViewById(R.id.ftime);
         z = (TextView) view.findViewById(R.id.ztime);
         a = (TextView) view.findViewById(R.id.atime);
@@ -43,11 +45,11 @@ public class SunriseFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        f.setText("Fajr Time : "+sp.getString("fajr_clock","Not Set"));
-        z.setText("Duhr Time : "+sp.getString("zuhr_clock","Not Set"));
-        a.setText("Asr Time : "+sp.getString("asr_clock","Not Set"));
-        m.setText("Maghrib Time : "+sp.getString("maghrib_clock","Not Set"));
-        i.setText("Isha Time : "+sp.getString("isha_clock","Not Set"));
+        f.setText("Fajr Time : " + sp.getString("fajr_clock", "Not Set"));
+        z.setText("Duhr Time : " + sp.getString("zuhr_clock", "Not Set"));
+        a.setText("Asr Time : " + sp.getString("asr_clock", "Not Set"));
+        m.setText("Maghrib Time : " + sp.getString("maghrib_clock", "Not Set"));
+        i.setText("Isha Time : " + sp.getString("isha_clock", "Not Set"));
         //Toast.makeText(getActivity(),"onResume",Toast.LENGTH_LONG).show();
     }
 

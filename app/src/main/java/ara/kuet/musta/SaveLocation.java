@@ -30,21 +30,23 @@ import java.util.Map;
 public class SaveLocation extends Fragment {
 
     public final static String TAG = SaveLocation.class.getSimpleName();
-    private Button save,delete;
+    private Button save, delete;
     private LinearLayout relativeLayout;
-    private SharedPreferences spMaster,spName,spLat,spLon;
-    private SharedPreferences.Editor editor,ename,elat,elon;
-    private float lat,lon;
+    private SharedPreferences spMaster, spName, spLat, spLon;
+    private SharedPreferences.Editor editor, ename, elat, elon;
+    private float lat, lon;
     private TextView[] tvName;
     int a = 0;
 
 
-    public static SaveLocation newInstance(){
+    public static SaveLocation newInstance() {
         return new SaveLocation();
     }
+
     public SaveLocation() {
         // Required empty public constructor
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -149,8 +151,7 @@ public class SaveLocation extends Fragment {
     private void mapper() {
         try {
             relativeLayout.removeAllViews();
-        } catch (Exception ignored)
-        {
+        } catch (Exception ignored) {
 
         }
         Map<String, ?> allName = spName.getAll();
@@ -172,10 +173,10 @@ public class SaveLocation extends Fragment {
     }
 
     private void initAll(View v) {
-        spMaster = getActivity().getSharedPreferences("mysp",0);
-        spName = getActivity().getSharedPreferences("myspname",0);
-        spLat = getActivity().getSharedPreferences("mysplat",0);
-        spLon = getActivity().getSharedPreferences("mysplon",0);
+        spMaster = getActivity().getSharedPreferences("mysp", 0);
+        spName = getActivity().getSharedPreferences("myspname", 0);
+        spLat = getActivity().getSharedPreferences("mysplat", 0);
+        spLon = getActivity().getSharedPreferences("mysplon", 0);
         editor = spMaster.edit();
         ename = spName.edit();
         elat = spLat.edit();

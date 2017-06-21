@@ -1,93 +1,135 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:2:1-47:12
-	xmlns:android
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:2:11-69
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:3:5-29
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
 	android:versionCode
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.VIBRATE
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:7:5-66
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:7:22-63
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:7:22-63
 uses-permission#android.permission.INTERNET
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:8:5-67
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:8:22-64
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:8:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:9:5-79
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:9:22-76
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:10:5-81
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:10:22-78
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:11:5-81
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:11:22-78
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:11:22-78
 application
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:13:5-45:19
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:13:5-44:19
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/musta/.android/build-cache/93e936258648f77e2e0903510af96e7f5933a01e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/musta/.android/build-cache/d5420a78fdcbaab58f73d8c6e9aa80286f36d10a/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/musta/.android/build-cache/6e00af6d98e777be1daa3ba9e105a817a58c4bc5/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/musta/.android/build-cache/c1097e5241a11348703285cefa44de08fd445582/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/musta/.android/build-cache/6f157e3068bfff7827016aeedeaacf7ea54f246a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/musta/.android/build-cache/4f9b9abba61e04a89b4d6843e5881f0c30ec6c67/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/musta/.android/build-cache/b1c9c8cc824bd0fc685630f836beb267e4b67833/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/musta/.android/build-cache/7b454cd921301f332006df374a67601bc6377546/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/musta/.android/build-cache/17eff7f1d76f8e66c573e216d7330950f217fec0/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:16:9-41
 	android:allowBackup
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:15:9-45
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:15:9-45
 	android:theme
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:17:9-40
 activity#ara.kuet.musta.MainActivity
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:18:9-26:20
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:label
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:20:13-45
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:19:13-55
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:19:13-55
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:24:27-74
 service#ara.kuet.musta.TestService
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:28:9-32:19
-	android:exported
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:31:13-36
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:28:9-32:19
 	android:enabled
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:30:13-35
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:30:13-35
+	android:exported
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:29:13-54
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:29:13-54
 receiver#ara.kuet.musta.BootStartUpReceiver
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:34:9-43:20
-	android:exported
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:37:13-36
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:34:9-42:20
 	android:enabled
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:36:13-35
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:35:13-62
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:35:13-62
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.LAUNCHER
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:38:13-41:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:39:17-79
+ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:39:17-79
 	android:name
-		ADDED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml:39:25-76
+		ADDED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml:39:25-76
 uses-sdk
-INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/musta/.android/build-cache/93e936258648f77e2e0903510af96e7f5933a01e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/musta/.android/build-cache/d5420a78fdcbaab58f73d8c6e9aa80286f36d10a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/musta/.android/build-cache/2c2b6ac7c4d97fdea0eb5e3c826927f0734b5234/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/musta/.android/build-cache/6e00af6d98e777be1daa3ba9e105a817a58c4bc5/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/musta/.android/build-cache/c1097e5241a11348703285cefa44de08fd445582/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/musta/.android/build-cache/6f157e3068bfff7827016aeedeaacf7ea54f246a/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/musta/.android/build-cache/4f9b9abba61e04a89b4d6843e5881f0c30ec6c67/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/musta/.android/build-cache/b1c9c8cc824bd0fc685630f836beb267e4b67833/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/musta/.android/build-cache/7b454cd921301f332006df374a67601bc6377546/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/musta/.android/build-cache/17eff7f1d76f8e66c573e216d7330950f217fec0/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
-		INJECTED from F:\ANDROID\AndroidStudio\SilencerNDitectorLAST\SilencerNDetector\app\src\main\AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/musta/Downloads/SilencerNDetector-master/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/musta/.android/build-cache/93e936258648f77e2e0903510af96e7f5933a01e/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/musta/.android/build-cache/d5420a78fdcbaab58f73d8c6e9aa80286f36d10a/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/musta/.android/build-cache/2c2b6ac7c4d97fdea0eb5e3c826927f0734b5234/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/musta/.android/build-cache/6e00af6d98e777be1daa3ba9e105a817a58c4bc5/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/musta/.android/build-cache/c1097e5241a11348703285cefa44de08fd445582/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/musta/.android/build-cache/6f157e3068bfff7827016aeedeaacf7ea54f246a/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/musta/.android/build-cache/4f9b9abba61e04a89b4d6843e5881f0c30ec6c67/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/musta/.android/build-cache/b1c9c8cc824bd0fc685630f836beb267e4b67833/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/musta/.android/build-cache/7b454cd921301f332006df374a67601bc6377546/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/musta/.android/build-cache/17eff7f1d76f8e66c573e216d7330950f217fec0/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/AndroidManifest.xml:26:9-47

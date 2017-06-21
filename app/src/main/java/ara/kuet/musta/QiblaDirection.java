@@ -29,12 +29,12 @@ public class QiblaDirection extends Fragment implements SensorEventListener {
     public final static String TAG = QiblaDirection.class.getSimpleName();
 
     private SharedPreferences spMaster;
-    private SharedPreferences.Editor ename,elat,elon;
-    private ImageView compass,indicator;
+    private SharedPreferences.Editor ename, elat, elon;
+    private ImageView compass, indicator;
     private float currentDegree = 0f;
     private SensorManager smanage;
-    private float myDegree,lat,lon;
-    static  TextView angleKeeper;
+    private float myDegree, lat, lon;
+    static TextView angleKeeper;
     private Button save;
 
     public QiblaDirection() {
@@ -62,9 +62,9 @@ public class QiblaDirection extends Fragment implements SensorEventListener {
         initPreferences(view);
     }
 
-    private void initPreferences( View v) {
+    private void initPreferences(View v) {
         smanage = (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);
-        spMaster = getActivity().getSharedPreferences("mysp",0);
+        spMaster = getActivity().getSharedPreferences("mysp", 0);
         SharedPreferences spName = getActivity().getSharedPreferences("myspname", 0);
         SharedPreferences spLat = getActivity().getSharedPreferences("mysplat", 0);
         SharedPreferences spLon = getActivity().getSharedPreferences("mysplon", 0);
@@ -86,11 +86,13 @@ public class QiblaDirection extends Fragment implements SensorEventListener {
                 SensorManager.SENSOR_DELAY_GAME);
 
     }
+
     public void onPause() {
         super.onPause();
         smanage.unregisterListener(this);
         //lm.removeUpdates(locationListener);
     }
+
     @Override
     public void onSensorChanged(SensorEvent event) {
         float degree = Math.round(event.values[0]);
@@ -109,7 +111,7 @@ public class QiblaDirection extends Fragment implements SensorEventListener {
         ra.setDuration(210);
         ra.setFillAfter(true);
         RotateAnimation ri = new RotateAnimation(
-                currentDegree-(41+myDegree),
+                currentDegree - (41 + myDegree),
                 -degree,
                 Animation.RELATIVE_TO_SELF, 0.5f,
                 Animation.RELATIVE_TO_SELF,
@@ -126,26 +128,23 @@ public class QiblaDirection extends Fragment implements SensorEventListener {
 
     }
 
-    public void  calculation()  {
-            String ak;
-            lat = spMaster.getFloat("latitude",(float) 22.48);//+North,-South
-            lon = spMaster.getFloat("longitude",(float) 89.45);//+East,-West
-            double upper = Math.sin(Math.PI / 180 * (lon-39.8233));
-            double lower = Math.cos(Math.PI/180*lat)*Math.tan(Math.PI/180*21.42330)-Math.sin(Math.PI/180*lat)* Math.cos(Math.PI/180*(lon-39.8230));
-            double cal0 = (upper/lower);
-            double cal1 = Math.atan(cal0);
-            cal1 = (cal1*180/Math.PI);
-            myDegree = (float) cal1;
-            int angle = (int) Math.ceil(myDegree);
-        if(angle>0&&angle<=180)
-        {
-            ak = String.valueOf(angle)+"' West To North";
+    public void calculation() {
+        String ak;
+        lat = spMaster.getFloat("latitude", (float) 22.48);//+North,-South
+        lon = spMaster.getFloat("longitude", (float) 89.45);//+East,-West
+        double upper = Math.sin(Math.PI / 180 * (lon - 39.8233));
+        double lower = Math.cos(Math.PI / 180 * lat) * Math.tan(Math.PI / 180 * 21.42330) - Math.sin(Math.PI / 180 * lat) * Math.cos(Math.PI / 180 * (lon - 39.8230));
+        double cal0 = (upper / lower);
+        double cal1 = Math.atan(cal0);
+        cal1 = (cal1 * 180 / Math.PI);
+        myDegree = (float) cal1;
+        int angle = (int) Math.ceil(myDegree);
+        if (angle > 0 && angle <= 180) {
+            ak = String.valueOf(angle) + "' West To North";
+        } else {
+            angle = -angle;
+            ak = String.valueOf(angle) + "' East To North";
         }
-        else
-        {
-            angle = - angle;
-            ak = String.valueOf(angle)+"' East To North";
-        }
-            angleKeeper.setText(ak);
-        }
+        angleKeeper.setText(ak);
+    }
 }

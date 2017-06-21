@@ -26,78 +26,78 @@ public class MainActivity extends FragmentActivity {
 
     public SharedPreferences spMaster;
     public SharedPreferences.Editor editor;
-	public static final String TAG = MainActivity.class.getSimpleName();
-	
-	private DrawerLayout mDrawerLayout;
-	private ListView mDrawerList;
-	private ActionBarDrawerToggle mDrawerToggle;
-	private CharSequence mDrawerTitle;
-	private CharSequence mTitle;
-	private MyAdapter myAdapter;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceStateMain) {
-		super.onCreate(savedInstanceStateMain);
-		setContentView(R.layout.activity_main);
-        spMaster = getSharedPreferences("mysp",0);
+    public static final String TAG = MainActivity.class.getSimpleName();
+
+    private DrawerLayout mDrawerLayout;
+    private ListView mDrawerList;
+    private ActionBarDrawerToggle mDrawerToggle;
+    private CharSequence mDrawerTitle;
+    private CharSequence mTitle;
+    private MyAdapter myAdapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceStateMain) {
+        super.onCreate(savedInstanceStateMain);
+        setContentView(R.layout.activity_main);
+        spMaster = getSharedPreferences("mysp", 0);
         editor = spMaster.edit();
 
         initializer();
         assignPreference();
         enableService();
 
-		mTitle = mDrawerTitle = getTitle();
-		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        mTitle = mDrawerTitle = getTitle();
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setHomeButtonEnabled(true);
-		
-		mDrawerToggle = new ActionBarDrawerToggle(
-				this, 
-				mDrawerLayout, 
-				R.drawable.ic_drawer, 
-				R.string.drawer_open, 
-				R.string.drawer_close
-				) {
-			public void onDrawerClosed(View view) {
-				getActionBar().setTitle(mTitle);
-				invalidateOptionsMenu();
-			}
-			
-			public void onDrawerOpened(View drawerView) {
-				getActionBar().setTitle(mDrawerTitle);
-				invalidateOptionsMenu();
-			}
-		};
-		
-		mDrawerLayout.setDrawerListener(mDrawerToggle);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
 
-		if(savedInstanceStateMain == null) {
-			navigateTo(1);
-		}
-	
-	}
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this,
+                mDrawerLayout,
+                R.drawable.ic_drawer,
+                R.string.drawer_open,
+                R.string.drawer_close
+        ) {
+            public void onDrawerClosed(View view) {
+                getActionBar().setTitle(mTitle);
+                invalidateOptionsMenu();
+            }
+
+            public void onDrawerOpened(View drawerView) {
+                getActionBar().setTitle(mDrawerTitle);
+                invalidateOptionsMenu();
+            }
+        };
+
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        if (savedInstanceStateMain == null) {
+            navigateTo(1);
+        }
+
+    }
 
     private void assignPreference() {
-        if(spMaster.getInt("fajr_hour",-1) == -1){
+        if (spMaster.getInt("fajr_hour", -1) == -1) {
             editor.putInt("fajr_hour", 4);
-            editor.putInt("fajr_minute",58);
+            editor.putInt("fajr_minute", 58);
         }
-        if(spMaster.getInt("zuhr_hour",-1) == -1){
-            editor.putInt("zuhr_hour",12);
-            editor.putInt("zuhr_minute",10);
+        if (spMaster.getInt("zuhr_hour", -1) == -1) {
+            editor.putInt("zuhr_hour", 12);
+            editor.putInt("zuhr_minute", 10);
         }
-        if(spMaster.getInt("asr_hour",-1) == -1){
-            editor.putInt("asr_hour",15);
-            editor.putInt("asr_minute",33);
+        if (spMaster.getInt("asr_hour", -1) == -1) {
+            editor.putInt("asr_hour", 15);
+            editor.putInt("asr_minute", 33);
         }
-        if(spMaster.getInt("maghrib_hour",-1) == -1){
-            editor.putInt("maghrib_hour",18);
-            editor.putInt("maghrib_minute",7);
+        if (spMaster.getInt("maghrib_hour", -1) == -1) {
+            editor.putInt("maghrib_hour", 18);
+            editor.putInt("maghrib_minute", 7);
         }
-        if(spMaster.getInt("isha_hour",-1) == -1){
-            editor.putInt("isha_hour",19);
-            editor.putInt("isha_minute",22);
+        if (spMaster.getInt("isha_hour", -1) == -1) {
+            editor.putInt("isha_hour", 19);
+            editor.putInt("isha_minute", 22);
         }
         editor.apply();
     }
@@ -145,12 +145,12 @@ public class MainActivity extends FragmentActivity {
     }
 
     private void enableService() {
-        if(isMyServiceRunning(TestService.class))
-        {
+        if (isMyServiceRunning(TestService.class)) {
             Intent service = new Intent(this, TestService.class);
             startService(service);
         }
     }
+
     private boolean isMyServiceRunning(Class<?> serviceClass) {
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
         for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
@@ -161,130 +161,131 @@ public class MainActivity extends FragmentActivity {
         return true;
     }
 
-    public void initializer(){
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		mDrawerList = (ListView) findViewById(R.id.left_drawer);
-		myAdapter = new MyAdapter(this);
-		mDrawerList.setAdapter(myAdapter);
+    public void initializer() {
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        myAdapter = new MyAdapter(this);
+        mDrawerList.setAdapter(myAdapter);
 
-	}
+    }
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		if(mDrawerToggle.onOptionsItemSelected(item)) {
-			return true;
-		}
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
 
-		return super.onOptionsItemSelected(item);
-	}
-	
-	@Override
-	protected void onPostCreate(Bundle savedInstanceState) {
-		super.onPostCreate(savedInstanceState);
-		mDrawerToggle.syncState();
-	}
-	
-	@Override
-	public void onConfigurationChanged(Configuration newConfig) {
-		super.onConfigurationChanged(newConfig);
-		mDrawerToggle.onConfigurationChanged(newConfig);
-	}
-	
-	private class DrawerItemClickListener implements OnItemClickListener {
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-			//Log.v(TAG, "ponies");
-			navigateTo(position);
-		}
-	}
-	
-	private void navigateTo(int position) {
-		//Log.v(TAG, "List View Item: " + position);
-		switch(position) {
-		case 0:
-			getSupportFragmentManager()
-					.beginTransaction()
-					.replace(R.id.content_frame,
-									QiblaDirection.newInstance(),
-									QiblaDirection.TAG).commit();
+        return super.onOptionsItemSelected(item);
+    }
 
-			break;
-		case 1:
-			getSupportFragmentManager()
-					.beginTransaction()
-					.replace(R.id.content_frame,
-									TabbedActivity.newInstance(),
-									TabbedActivity.TAG).commit();
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    private class DrawerItemClickListener implements OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            //Log.v(TAG, "ponies");
+            navigateTo(position);
+        }
+    }
+
+    private void navigateTo(int position) {
+        //Log.v(TAG, "List View Item: " + position);
+        switch (position) {
+            case 0:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content_frame,
+                                QiblaDirection.newInstance(),
+                                QiblaDirection.TAG).commit();
+
+                break;
+            case 1:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content_frame,
+                                TabbedActivity.newInstance(),
+                                TabbedActivity.TAG).commit();
 
 
-			break;
-		case 2:
-			getSupportFragmentManager()
-					.beginTransaction()
-					.replace(R.id.content_frame,
-									SaveLocation.newInstance(),
-									SaveLocation.TAG).commit();
-            break;
-		case 3:
-			getSupportFragmentManager()
-					.beginTransaction()
-					.replace(R.id.content_frame,
-									AboutUs.newInstances(),
-									AboutUs.TAG).commit();
-			break;
+                break;
+            case 2:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content_frame,
+                                SaveLocation.newInstance(),
+                                SaveLocation.TAG).commit();
+                break;
+            case 3:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content_frame,
+                                AboutUs.newInstances(),
+                                AboutUs.TAG).commit();
+                break;
             default:
-				break;
+                break;
 
-		}
-		mDrawerLayout.closeDrawer(mDrawerList);
-	}
-	
-	@Override
-	public void setTitle(CharSequence title) {
-		mTitle = title;
-		getActionBar().setTitle(mTitle);
-	}
-	
+        }
+        mDrawerLayout.closeDrawer(mDrawerList);
+    }
+
+    @Override
+    public void setTitle(CharSequence title) {
+        mTitle = title;
+        getActionBar().setTitle(mTitle);
+    }
+
 }
-class MyAdapter extends BaseAdapter{
-	private Context context;
 
-	String[] mDrawerItems;
-	int[] images = { R.drawable.icon_compass9, R.drawable.nav_silencer, R.drawable.mosque, R.drawable.drawer_about_boy};
-	public MyAdapter(Context context){
-		this.context = context;
-		mDrawerItems = context.getResources().getStringArray(R.array.drawer_titles);
-	}
+class MyAdapter extends BaseAdapter {
+    private Context context;
 
-	@Override
-	public int getCount() {
-		return mDrawerItems.length;
-	}
+    String[] mDrawerItems;
+    int[] images = {R.drawable.icon_compass9, R.drawable.nav_silencer, R.drawable.mosque, R.drawable.drawer_about_boy};
 
-	@Override
-	public Object getItem(int position) {
-		return mDrawerItems[position];
-	}
+    public MyAdapter(Context context) {
+        this.context = context;
+        mDrawerItems = context.getResources().getStringArray(R.array.drawer_titles);
+    }
 
-	@Override
-	public long getItemId(int position) {
-		return position;
-	}
+    @Override
+    public int getCount() {
+        return mDrawerItems.length;
+    }
 
-	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
-		View row;
-		if (convertView == null){
-			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			row = inflater.inflate(R.layout.custom_row, parent, false);
-		}
-		else {
-			row = convertView;
-		}
-		TextView titleTextView = (TextView) row.findViewById(R.id.textView1);
-		ImageView titleImageView = (ImageView) row.findViewById(R.id.imageView1);
-		titleTextView.setText(mDrawerItems[position]);
-		titleImageView.setImageResource(images[position]);
-		return row;
-	}
+    @Override
+    public Object getItem(int position) {
+        return mDrawerItems[position];
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        View row;
+        if (convertView == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            row = inflater.inflate(R.layout.custom_row, parent, false);
+        } else {
+            row = convertView;
+        }
+        TextView titleTextView = (TextView) row.findViewById(R.id.textView1);
+        ImageView titleImageView = (ImageView) row.findViewById(R.id.imageView1);
+        titleTextView.setText(mDrawerItems[position]);
+        titleImageView.setImageResource(images[position]);
+        return row;
+    }
 }

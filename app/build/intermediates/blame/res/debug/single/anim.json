@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/home/musta/.android/build-cache/cabdcddb95cc61935503681b32bea05294127f78/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/home/musta/Downloads/SilencerNDetector-master/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/musta/.android/build-cache/eef02d51f0a4b64ab4c4a72adfab71191dd70a07/output/res/anim/abc_slide_out_bottom.xml"
+    }
+]
